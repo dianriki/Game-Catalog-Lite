@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game Catalog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://rawg.io/assets/en/favicon.ico?v=4" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #151515">
+    <div class="container-fluid" style="padding-bottom: 50px;">
+        <div class="row" style="padding: 50px 20px;">
+            <div id="catalog_1" class="row">
+            </div>
+            <div id="catalog_2" class="row">
+            </div>
+        </div>
+        <input type="hidden" id="next_page">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"
+            style="justify-content: center;" id="div_load_more" hidden>
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" onclick="next_page()" class="btn btn-lg btn-secondary">Load More <span
+                        id="icon"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
